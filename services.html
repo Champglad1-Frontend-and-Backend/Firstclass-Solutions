@@ -168,5 +168,19 @@
     </div>
   </footer>
 
+  <!-- Smooth Fade-In Animation Script -->
+  <script>
+    const serviceItems = document.querySelectorAll('.service-item');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    serviceItems.forEach(item => observer.observe(item));
+  </script>
+
 </body>
 </html>

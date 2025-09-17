@@ -60,11 +60,11 @@ nav ul {
 nav ul li a {
   color: white;
   text-decoration: none;
-  padding: 0.7rem 1.2rem; /* Larger touch target */
+  padding: 0.7rem 1.2rem;
   margin: 0 5px;
   border-radius: 5px;
   transition: all 0.3s ease;
-  font-size: 1rem; /* Mobile-friendly font size */
+  font-size: 1rem;
 }
 
 nav ul li a:hover,
@@ -290,7 +290,6 @@ footer {
     font-size: 1.8rem;
   }
 
-  /* Improve mobile spacing */
   .btn {
     padding: 12px 24px;
     font-size: 1rem;
@@ -306,4 +305,10 @@ img {
 /* Prevent horizontal scroll */
 * {
   overflow-x: hidden;
+}
+
+/* Accessibility: Focus styles for keyboard navigation */
+a:focus, button:focus {
+  outline: 3px solid #FFD700;
+  outline-offset: 2px;
 }

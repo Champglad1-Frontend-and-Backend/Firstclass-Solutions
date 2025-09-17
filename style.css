@@ -60,10 +60,11 @@ nav ul {
 nav ul li a {
   color: white;
   text-decoration: none;
-  padding: 0.5rem 1rem;
+  padding: 0.7rem 1.2rem; /* Larger touch target */
   margin: 0 5px;
   border-radius: 5px;
   transition: all 0.3s ease;
+  font-size: 1rem; /* Mobile-friendly font size */
 }
 
 nav ul li a:hover,
@@ -195,6 +196,7 @@ nav ul li a.active {
   font-weight: bold;
   transition: all 0.3s ease;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-size: 1rem;
 }
 
 .btn:hover {
@@ -251,6 +253,7 @@ footer {
   color: #bbb;
   text-decoration: none;
   transition: color 0.3s ease;
+  font-size: 0.95rem;
 }
 
 .footer-col ul li a:hover {
@@ -286,4 +289,21 @@ footer {
   .cta-section h2 {
     font-size: 1.8rem;
   }
+
+  /* Improve mobile spacing */
+  .btn {
+    padding: 12px 24px;
+    font-size: 1rem;
+  }
+}
+
+/* Ensure images don't overflow */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Prevent horizontal scroll */
+* {
+  overflow-x: hidden;
 }

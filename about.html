@@ -6,9 +6,190 @@
   <title>About First Class Solutions Nig Ltd.</title>
   <meta name="description" content="Learn about First Class Solutions Nig Ltd. – a leading business and financial consulting firm in Nigeria.">
   <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* Embedded modern styling for clarity - you can move this to style.css */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.7;
+      color: #333;
+      background-color: #f9f9fb;
+    }
+
+    header {
+      background-color: #0a2540;
+      color: white;
+      padding: 1rem 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 15px;
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: #fff;
+      text-decoration: none;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+    }
+
+    nav a {
+      color: #ddd;
+      text-decoration: none;
+      font-size: 1rem;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover, nav a.active {
+      color: #00c853;
+      font-weight: 500;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #0a2540, #1b4e7a);
+      color: white;
+      text-align: center;
+      padding: 5rem 1rem;
+      margin-bottom: 3rem;
+    }
+
+    .hero h1 {
+      font-size: 2.8rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.3rem;
+      opacity: 0.9;
+    }
+
+    .about-content {
+      padding: 3rem 0;
+    }
+
+    .about-content h2 {
+      font-size: 2rem;
+      color: #0a2540;
+      margin: 2rem 0 1rem;
+      border-left: 5px solid #00c853;
+      padding-left: 15px;
+    }
+
+    .about-content p {
+      font-size: 1.1rem;
+      margin-bottom: 1.5rem;
+      color: #444;
+    }
+
+    .values-list {
+      margin: 1.5rem 0;
+      padding-left: 20px;
+    }
+
+    .values-list li {
+      margin-bottom: 0.8rem;
+      font-size: 1.1rem;
+      color: #444;
+    }
+
+    .values-list strong {
+      color: #0a2540;
+    }
+
+    footer {
+      background-color: #0a2540;
+      color: #ddd;
+      padding: 3rem 0 1.5rem;
+      margin-top: 4rem;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .footer-col h4 {
+      color: #fff;
+      margin-bottom: 1rem;
+      font-size: 1.2rem;
+    }
+
+    .footer-col p,
+    .footer-col li {
+      color: #bbb;
+      font-size: 0.95rem;
+    }
+
+    .footer-col ul {
+      list-style: none;
+    }
+
+    .footer-col ul li {
+      margin-bottom: 0.5rem;
+    }
+
+    .footer-col a {
+      color: #bbb;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .footer-col a:hover {
+      color: #00c853;
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid #2c3e50;
+      margin: 2rem 0;
+    }
+
+    .copyright {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #999;
+    }
+
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+      }
+
+      .hero h1 {
+        font-size: 2.2rem;
+      }
+
+      .hero p {
+        font-size: 1.1rem;
+      }
+    }
+  </style>
 </head>
 <body>
 
+  <!-- Header -->
   <header>
     <div class="container">
       <div class="logo">First Class Solutions</div>
@@ -25,6 +206,7 @@
     </div>
   </header>
 
+  <!-- Hero Section -->
   <section class="hero">
     <div class="container">
       <h1>About First Class Solutions</h1>
@@ -32,29 +214,34 @@
     </div>
   </section>
 
+  <!-- About Content -->
   <section class="about-content">
     <div class="container">
       <h2>Our Story</h2>
       <p>Founded in 2006 by Dr. Kazeem Ogbara, First Class Solutions Nig Ltd. has grown into a trusted name in business analytics, investment advisory, and corporate strategy across Nigeria and beyond.</p>
       
-      <p>We specialize in helping businesses make data-driven decisions, optimize financial performance, and achieve sustainable growth through expert consulting and research-based insights.</p>
+      <p>We specialize in helping businesses make data-driven decisions, optimize financial performance, and achieve sustainable growth through expert consulting and research-based insights. Our client portfolio spans SMEs, multinational firms, government agencies, and non-profit organizations.</p>
 
       <h2>Mission</h2>
-      <p>To empower organizations with strategic insight, financial clarity, and operational excellence through innovative, client-focused solutions.</p>
+      <p>To empower organizations with strategic insight, financial clarity, and operational excellence through innovative, client-focused solutions that drive measurable results.</p>
 
       <h2>Vision</h2>
       <p>To be the preferred consulting partner for businesses and institutions seeking world-class advisory services in Africa and globally.</p>
 
       <h2>Core Values</h2>
       <ul class="values-list">
-        <li><strong>Integrity:</strong> We operate with honesty and transparency.</li>
-        <li><strong>Excellence:</strong> We deliver high-quality, impactful results.</li>
-        <li><strong>Innovation:</strong> We embrace data, research, and modern frameworks.</li>
-        <li><strong>Client-Centricity:</strong> Your success is our priority.</li>
+        <li><strong>Integrity:</strong> We operate with honesty, transparency, and unwavering ethical standards.</li>
+        <li><strong>Excellence:</strong> We deliver high-quality, impactful results through rigorous analysis and professionalism.</li>
+        <li><strong>Innovation:</strong> We embrace cutting-edge data tools, research methodologies, and modern frameworks.</li>
+        <li><strong>Client-Centricity:</strong> Your goals are our mission — we listen, adapt, and deliver tailored success.</li>
       </ul>
+
+      <h2>Why Choose Us?</h2>
+      <p>With over 18 years of experience, a team of certified consultants, and a proven track record of transforming businesses, First Class Solutions combines local expertise with global best practices to deliver exceptional value.</p>
     </div>
   </section>
 
+  <!-- Footer -->
   <footer>
     <div class="container">
       <div class="footer-grid">
@@ -73,10 +260,10 @@
           </ul>
         </div>
         <div class="footer-col">
-          <h4>Contact</h4>
-          <p>Lagos, Nigeria</p>
-          <p>Email: info@firstclasssolutions.com.ng</p>
-          <p>Phone: +234 803 000 0000</p>
+          <h4>Contact Us</h4>
+          <p><strong>Location:</strong> Lagos, Nigeria</p>
+          <p><strong>Email:</strong> <a href="mailto:firstclasssolutions002@gmail.com">firstclasssolutions002@gmail.com</a></p>
+          <p><strong>Phone:</strong> <a href="tel:+23477755566">+234 777 555 66</a></p>
         </div>
       </div>
       <hr>

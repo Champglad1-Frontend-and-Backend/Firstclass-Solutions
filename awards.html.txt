@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Awards</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+        header {
+            text-align: center;
+            padding-bottom: 20px;
+        }
+        h1 {
+            font-size: 2em;
+            margin: 0;
+        }
+        section#awards {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        h2 {
+            text-align: center;
+            color: #555;
+        }
+        p {
+            font-style: italic;
+            text-align: center;
+            font-size: 1.1em;
+            margin-top: 20px;
+            color: #777;
+        }
+        /* Optional: add some hover effect or other styles */
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Achievements</h1>
+    </header>
+    <section id="awards">
+        <h2>Awards</h2>
+        <p>🎉 <em>Awards information is pending and will be updated once available.</em></p>
+    </section>
+</body>
+</html>

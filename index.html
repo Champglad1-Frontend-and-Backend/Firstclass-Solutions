@@ -3,41 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Firstclass Solutions | IT Services, Consulting & Logistics Experts</title>
+    <title>Firstclass Solutions | IT Services, Consulting & Logistics</title>
     <meta name="description" content="Firstclass Solutions provides cutting-edge IT services, business consulting, and logistics solutions to help your business thrive in the digital age.">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
-        /* Modern CSS Reset and Variables */
+        /* Global Styles - Preserving Original Colors */
         :root {
-            --primary: #2563eb;
-            --primary-dark: #1d4ed8;
-            --secondary: #1e293b;
-            --accent: #f1f5f9;
-            --text: #334155;
-            --light: #ffffff;
-            --success: #10b981;
-            --gradient: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
-            --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            --primary: #0056b3;
+            --secondary: #2c3e50;
+            --accent: #f8f9fa;
+            --text: #333;
+            --light: #fff;
         }
         
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-        }
-        
-        html {
-            scroll-behavior: smooth;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
         
         body {
-            font-family: 'Inter', sans-serif;
             color: var(--text);
             line-height: 1.6;
-            background-color: #f8fafc;
-            overflow-x: hidden;
+            background-color: #f5f7fa;
         }
         
         .container {
@@ -46,74 +35,55 @@
             margin: 0 auto;
         }
         
-        /* Modern Button Styles */
         .btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            background: var(--gradient);
+            display: inline-block;
+            background: var(--primary);
             color: var(--light);
-            padding: 12px 28px;
+            padding: 12px 24px;
             border: none;
-            border-radius: 8px;
+            border-radius: 4px;
             cursor: pointer;
             text-decoration: none;
             font-size: 16px;
             font-weight: 600;
             transition: all 0.3s ease;
-            box-shadow: var(--shadow);
         }
         
         .btn:hover {
+            background: #003d82;
             transform: translateY(-2px);
-            box-shadow: var(--shadow-lg);
         }
         
-        .btn-outline {
-            background: transparent;
-            border: 2px solid var(--primary);
-            color: var(--primary);
-        }
-        
-        .btn-outline:hover {
-            background: var(--primary);
-            color: var(--light);
-        }
-        
-        /* Section Styling */
         .section-title {
             text-align: center;
-            margin-bottom: 50px;
+            margin-bottom: 40px;
+            color: var(--secondary);
         }
         
         .section-title h2 {
             font-size: 2.5rem;
             margin-bottom: 15px;
-            color: var(--secondary);
-            font-weight: 700;
         }
         
         .section-title p {
             font-size: 1.1rem;
             max-width: 700px;
             margin: 0 auto;
-            color: #64748b;
+            color: #666;
         }
         
         section {
-            padding: 100px 0;
+            padding: 80px 0;
         }
         
-        /* Modern Header */
+        /* Header Styles */
         header {
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(10px);
-            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            background: var(--light);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
             position: fixed;
             width: 100%;
             top: 0;
             z-index: 1000;
-            transition: all 0.3s ease;
         }
         
         .header-container {
@@ -128,20 +98,6 @@
             font-weight: 700;
             color: var(--primary);
             text-decoration: none;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-        
-        .logo-icon {
-            background: var(--gradient);
-            width: 40px;
-            height: 40px;
-            border-radius: 8px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
         }
         
         .logo span {
@@ -151,7 +107,10 @@
         nav ul {
             display: flex;
             list-style: none;
-            gap: 30px;
+        }
+        
+        nav ul li {
+            margin-left: 30px;
         }
         
         nav ul li a {
@@ -190,34 +149,22 @@
         
         /* Enhanced Hero Section */
         .hero {
-            background: linear-gradient(135deg, rgba(37, 99, 235, 0.9) 0%, rgba(29, 78, 216, 0.9) 100%), url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1744&q=80') no-repeat center center/cover;
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80') no-repeat center center/cover;
             color: var(--light);
-            text-align: left;
-            padding: 200px 0 120px;
-            margin-top: 0;
-        }
-        
-        .hero-content {
-            max-width: 700px;
+            text-align: center;
+            padding: 160px 0 100px;
+            margin-top: 80px;
         }
         
         .hero h1 {
-            font-size: 3.5rem;
+            font-size: 3rem;
             margin-bottom: 20px;
-            font-weight: 700;
-            line-height: 1.2;
         }
         
         .hero p {
-            font-size: 1.3rem;
-            margin-bottom: 40px;
-            opacity: 0.9;
-        }
-        
-        .hero-buttons {
-            display: flex;
-            gap: 15px;
-            flex-wrap: wrap;
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 30px;
         }
         
         /* Enhanced Services Section */
@@ -232,106 +179,60 @@
         }
         
         .service-card {
-            background: var(--light);
-            border-radius: 12px;
+            background: var(--accent);
+            border-radius: 8px;
             overflow: hidden;
-            transition: all 0.3s ease;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
             text-align: center;
-            padding: 40px 30px;
-            box-shadow: var(--shadow);
-            border: 1px solid #e2e8f0;
-            position: relative;
-            z-index: 1;
-        }
-        
-        .service-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 0;
-            background: var(--gradient);
-            transition: height 0.3s ease;
-            z-index: -1;
-        }
-        
-        .service-card:hover::before {
-            height: 100%;
+            padding: 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
         }
         
         .service-card:hover {
             transform: translateY(-10px);
-            box-shadow: var(--shadow-lg);
-            color: white;
-        }
-        
-        .service-card:hover h3,
-        .service-card:hover p,
-        .service-card:hover i {
-            color: white;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
         }
         
         .service-card i {
-            font-size: 3.5rem;
+            font-size: 3rem;
             color: var(--primary);
-            margin-bottom: 25px;
-            transition: all 0.3s ease;
+            margin-bottom: 20px;
         }
         
         .service-card h3 {
             font-size: 1.5rem;
             margin-bottom: 15px;
             color: var(--secondary);
-            transition: all 0.3s ease;
-        }
-        
-        .service-card p {
-            transition: all 0.3s ease;
         }
         
         /* Enhanced About Section */
         .about {
             background: var(--accent);
-            position: relative;
-            overflow: hidden;
-        }
-        
-        .about::before {
-            content: '';
-            position: absolute;
-            top: -50%;
-            right: -10%;
-            width: 500px;
-            height: 500px;
-            background: var(--gradient);
-            border-radius: 50%;
-            opacity: 0.05;
         }
         
         .about-content {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 60px;
+            gap: 40px;
             align-items: center;
-            position: relative;
-            z-index: 1;
-        }
-        
-        .about-image {
-            position: relative;
         }
         
         .about-image img {
             width: 100%;
-            border-radius: 12px;
-            box-shadow: var(--shadow-lg);
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .about-text h2 {
+            font-size: 2.2rem;
+            margin-bottom: 20px;
+            color: var(--secondary);
         }
         
         .about-stats {
             display: flex;
-            gap: 30px;
-            margin-top: 40px;
+            justify-content: space-between;
+            margin-top: 30px;
         }
         
         .stat {
@@ -347,33 +248,35 @@
         
         .stat-text {
             font-size: 0.9rem;
-            color: #64748b;
+            color: #666;
         }
         
         /* Leadership Section */
         .leadership {
-            margin-top: 80px;
+            margin-top: 50px;
+            text-align: center;
         }
         
         .ceo-card {
             background: var(--light);
-            border-radius: 12px;
-            padding: 40px;
-            box-shadow: var(--shadow);
-            max-width: 800px;
+            border-radius: 8px;
+            padding: 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
             margin: 0 auto;
-            display: grid;
-            grid-template-columns: 1fr 2fr;
-            gap: 30px;
+            display: flex;
+            flex-direction: column;
             align-items: center;
         }
         
         .ceo-image {
-            width: 100%;
-            border-radius: 12px;
-            overflow: hidden;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+            border: 5px solid var(--primary);
             background: linear-gradient(45deg, #f3f4f6, #e5e7eb);
-            height: 300px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -407,17 +310,15 @@
         }
         
         .testimonial-card {
-            background: var(--light);
-            border-radius: 12px;
+            background: var(--accent);
+            border-radius: 8px;
             padding: 30px;
-            box-shadow: var(--shadow);
-            border: 1px solid #e2e8f0;
-            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
         }
         
         .testimonial-card:hover {
             transform: translateY(-5px);
-            box-shadow: var(--shadow-lg);
         }
         
         .testimonial-text {
@@ -459,13 +360,13 @@
         .contact-container {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 60px;
+            gap: 40px;
         }
         
         .contact-info {
             display: flex;
             flex-direction: column;
-            gap: 30px;
+            gap: 20px;
         }
         
         .contact-method {
@@ -475,7 +376,7 @@
         }
         
         .contact-icon {
-            background: var(--gradient);
+            background: var(--primary);
             width: 50px;
             height: 50px;
             border-radius: 50%;
@@ -489,9 +390,9 @@
         
         .contact-form {
             background: var(--light);
-            padding: 40px;
-            border-radius: 12px;
-            box-shadow: var(--shadow);
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
         }
         
         .form-group {
@@ -500,41 +401,60 @@
         
         .form-group label {
             display: block;
-            margin-bottom: 8px;
+            margin-bottom: 5px;
             font-weight: 500;
-            color: var(--secondary);
         }
         
         .form-group input,
         .form-group textarea,
         .form-group select {
             width: 100%;
-            padding: 12px 15px;
-            border: 1px solid #cbd5e1;
-            border-radius: 8px;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
             font-size: 16px;
-            transition: all 0.3s ease;
-            font-family: 'Inter', sans-serif;
-        }
-        
-        .form-group input:focus,
-        .form-group textarea:focus,
-        .form-group select:focus {
-            outline: none;
-            border-color: var(--primary);
-            box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
         }
         
         .form-group textarea {
             min-height: 150px;
-            resize: vertical;
         }
         
-        /* Enhanced Footer */
+        /* Industries Section */
+        .industries {
+            background: var(--light);
+        }
+        
+        .industries-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        
+        .industry-item {
+            background: var(--accent);
+            padding: 25px 20px;
+            border-radius: 4px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+        
+        .industry-item:hover {
+            background: var(--primary);
+            color: white;
+            transform: translateY(-5px);
+        }
+        
+        .industry-item i {
+            font-size: 2rem;
+            margin-bottom: 15px;
+            display: block;
+        }
+        
+        /* Footer */
         footer {
             background: var(--secondary);
             color: var(--light);
-            padding: 80px 0 30px;
+            padding: 60px 0 30px;
         }
         
         .footer-container {
@@ -552,7 +472,7 @@
         .footer-section p,
         .footer-section li {
             margin-bottom: 10px;
-            color: #cbd5e1;
+            color: #ddd;
         }
         
         .footer-section ul {
@@ -560,7 +480,7 @@
         }
         
         .footer-section a {
-            color: #cbd5e1;
+            color: #ddd;
             text-decoration: none;
             transition: color 0.3s ease;
         }
@@ -593,10 +513,9 @@
         
         .copyright {
             text-align: center;
-            margin-top: 60px;
+            margin-top: 40px;
             padding-top: 20px;
             border-top: 1px solid rgba(255, 255, 255, 0.1);
-            color: #94a3b8;
         }
         
         /* Live Chat Widget */
@@ -606,14 +525,14 @@
             right: 30px;
             width: 60px;
             height: 60px;
-            background: var(--gradient);
+            background: var(--primary);
             color: var(--light);
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
             cursor: pointer;
-            box-shadow: var(--shadow-lg);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
             z-index: 999;
             transition: all 0.3s ease;
         }
@@ -629,8 +548,8 @@
             width: 350px;
             height: 450px;
             background: var(--light);
-            border-radius: 12px;
-            box-shadow: var(--shadow-lg);
+            border-radius: 8px;
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
             z-index: 999;
             display: none;
             flex-direction: column;
@@ -638,7 +557,7 @@
         }
         
         .chat-header {
-            background: var(--gradient);
+            background: var(--primary);
             color: var(--light);
             padding: 15px 20px;
             display: flex;
@@ -659,64 +578,27 @@
         
         .chat-input {
             display: flex;
-            padding: 15px;
-            border-top: 1px solid #e2e8f0;
+            padding: 10px;
+            border-top: 1px solid #ddd;
         }
         
         .chat-input input {
             flex: 1;
-            padding: 10px 15px;
-            border: 1px solid #cbd5e1;
-            border-radius: 20px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
             margin-right: 10px;
-            font-family: 'Inter', sans-serif;
-        }
-        
-        /* Industries Section */
-        .industries {
-            background: var(--light);
-        }
-        
-        .industries-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 20px;
-        }
-        
-        .industry-item {
-            background: var(--accent);
-            padding: 25px 20px;
-            border-radius: 8px;
-            text-align: center;
-            transition: all 0.3s ease;
-        }
-        
-        .industry-item:hover {
-            background: var(--primary);
-            color: white;
-            transform: translateY(-5px);
-        }
-        
-        .industry-item i {
-            font-size: 2rem;
-            margin-bottom: 15px;
-            display: block;
         }
         
         /* Responsive Styles */
         @media (max-width: 992px) {
             .about-content,
-            .contact-container,
-            .ceo-card {
+            .contact-container {
                 grid-template-columns: 1fr;
             }
             
             .about-image {
                 order: -1;
-            }
-            
-            .hero h1 {
-                font-size: 2.8rem;
             }
         }
         
@@ -734,7 +616,6 @@
                 background: var(--light);
                 transition: all 0.3s ease;
                 box-shadow: 5px 0 10px rgba(0, 0, 0, 0.1);
-                padding: 30px;
             }
             
             nav.active {
@@ -743,16 +624,11 @@
             
             nav ul {
                 flex-direction: column;
-                gap: 20px;
+                padding: 30px;
             }
             
-            .hero {
-                text-align: center;
-                padding: 180px 0 80px;
-            }
-            
-            .hero-buttons {
-                justify-content: center;
+            nav ul li {
+                margin: 15px 0;
             }
             
             .hero h1 {
@@ -774,12 +650,7 @@
     <!-- Header -->
     <header>
         <div class="container header-container">
-            <a href="#" class="logo">
-                <div class="logo-icon">
-                    <i class="fas fa-cube"></i>
-                </div>
-                Firstclass <span>Solutions</span>
-            </a>
+            <a href="#" class="logo">Firstclass <span>Solutions</span></a>
             <div class="mobile-menu-btn">
                 <i class="fas fa-bars"></i>
             </div>
@@ -798,14 +669,9 @@
     <!-- Hero Section -->
     <section class="hero" id="home">
         <div class="container">
-            <div class="hero-content">
-                <h1>Transform Your Business with Firstclass Solutions</h1>
-                <p>We deliver cutting-edge IT services, strategic consulting, and optimized logistics to drive your business growth in the digital era.</p>
-                <div class="hero-buttons">
-                    <a href="#contact" class="btn">Get Started <i class="fas fa-arrow-right"></i></a>
-                    <a href="#services" class="btn btn-outline">Our Services</a>
-                </div>
-            </div>
+            <h1>Firstclass IT Solutions for Your Business</h1>
+            <p>We provide cutting-edge IT services, consulting, and logistics solutions to help your business thrive in the digital age.</p>
+            <a href="#contact" class="btn">Get Started</a>
         </div>
     </section>
 
@@ -813,24 +679,24 @@
     <section class="services" id="services">
         <div class="container">
             <div class="section-title">
-                <h2>Our Comprehensive Services</h2>
-                <p>We provide end-to-end solutions to help your business thrive in a competitive landscape</p>
+                <h2>Our Services</h2>
+                <p>Comprehensive solutions tailored to your business needs</p>
             </div>
             <div class="services-grid">
                 <div class="service-card">
                     <i class="fas fa-laptop-code"></i>
                     <h3>IT Services</h3>
-                    <p>From network infrastructure to cloud solutions, cybersecurity, and digital transformation, we provide comprehensive IT services to keep your business running smoothly and securely.</p>
+                    <p>From network infrastructure to cloud solutions, we provide comprehensive IT services to keep your business running smoothly.</p>
                 </div>
                 <div class="service-card">
                     <i class="fas fa-chalkboard-teacher"></i>
-                    <h3>Business Consulting</h3>
-                    <p>Our expert consultants help you make informed technology decisions, optimize processes, and develop strategies that align with your business goals for maximum ROI.</p>
+                    <h3>Consulting</h3>
+                    <p>Our expert consultants help you make informed technology decisions that align with your business goals.</p>
                 </div>
                 <div class="service-card">
                     <i class="fas fa-truck-loading"></i>
-                    <h3>Logistics Solutions</h3>
-                    <p>Streamline your supply chain with our advanced logistics solutions, inventory management systems, and process optimization to reduce costs and improve efficiency.</p>
+                    <h3>Logistics</h3>
+                    <p>Streamline your supply chain with our advanced logistics solutions and optimize your operations.</p>
                 </div>
             </div>
         </div>
@@ -840,14 +706,14 @@
     <section class="about" id="about">
         <div class="container">
             <div class="section-title">
-                <h2>About Firstclass Solutions</h2>
-                <p>Your trusted partner in technology and business transformation</p>
+                <h2>About Us</h2>
+                <p>Your trusted partner in technology and business solutions</p>
             </div>
             <div class="about-content">
                 <div class="about-text">
-                    <h2>Driving Innovation Since 2010</h2>
-                    <p>Firstclass Solutions was founded with a mission to provide businesses with the technology solutions they need to succeed in an increasingly digital world. Our team of experts combines technical expertise with business acumen to deliver results that matter.</p>
-                    <p>We believe in building long-term partnerships with our clients, understanding their unique challenges, and delivering tailored solutions that drive real, measurable results.</p>
+                    <h2>We Deliver Firstclass Solutions</h2>
+                    <p>Firstclass Solutions was founded with a simple mission: to provide businesses with the technology solutions they need to succeed in an increasingly digital world.</p>
+                    <p>With over a decade of experience, our team of experts has helped hundreds of companies across various industries transform their operations, enhance their efficiency, and achieve their business objectives.</p>
                     
                     <div class="about-stats">
                         <div class="stat">
@@ -864,7 +730,7 @@
                         </div>
                     </div>
                     
-                    <a href="#contact" class="btn" style="margin-top: 30px;">Learn More About Us</a>
+                    <a href="#contact" class="btn" style="margin-top: 20px;">Learn More</a>
                 </div>
                 <div class="about-image">
                     <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80" alt="Our Team">
@@ -909,22 +775,17 @@
             <div class="leadership">
                 <div class="section-title">
                     <h2>Our Leadership</h2>
-                    <p>Meet the visionary behind Firstclass Solutions</p>
+                    <p>Meet our visionary leader</p>
                 </div>
                 <div class="ceo-card">
                     <div class="ceo-image">
                         <!-- Placeholder for Dr. Akeem O's image -->
                         <p>Image of Dr. Akeem O: A professional portrait</p>
                     </div>
-                    <div class="ceo-info">
-                        <h3>Dr. Akeem O</h3>
-                        <span class="ceo-title">Chief Executive Officer</span>
-                        <p>With over 15 years of experience in the technology industry, Dr. Akeem O leads Firstclass Solutions with vision and expertise. His innovative approach to business solutions has positioned our company as an industry leader.</p>
-                        <p>Dr. Akeem holds a Ph.D. in Computer Science from MIT and has been recognized with numerous awards for his contributions to the tech industry and business innovation.</p>
-                        <div style="margin-top: 20px;">
-                            <a href="#contact" class="btn">Get in Touch</a>
-                        </div>
-                    </div>
+                    <h3>Dr. Akeem O</h3>
+                    <p class="ceo-title">Chief Executive Officer</p>
+                    <p>With over 15 years of experience in the technology industry, Dr. Akeem O leads Firstclass Solutions with vision and expertise. His innovative approach to business solutions has positioned our company as an industry leader.</p>
+                    <p>Dr. Akeem holds a Ph.D. in Computer Science from MIT and has been recognized with numerous awards for his contributions to the tech industry.</p>
                 </div>
             </div>
         </div>
@@ -982,12 +843,12 @@
     <section class="contact" id="contact">
         <div class="container">
             <div class="section-title">
-                <h2>Get In Touch</h2>
-                <p>Ready to transform your business? Contact us today</p>
+                <h2>Contact Us</h2>
+                <p>Get in touch to discuss how we can help your business</p>
             </div>
             <div class="contact-container">
                 <div class="contact-info">
-                    <h3>Let's Start a Conversation</h3>
+                    <h3>Get In Touch</h3>
                     <p>Have questions about our services or ready to get started? Reach out to us using the contact form or through our contact details below.</p>
                     
                     <div class="contact-method">
@@ -1019,16 +880,6 @@
                             <p>info@firstclasssolutions.com</p>
                         </div>
                     </div>
-                    
-                    <div class="contact-method">
-                        <div class="contact-icon">
-                            <i class="fas fa-clock"></i>
-                        </div>
-                        <div>
-                            <h4>Business Hours</h4>
-                            <p>Monday - Friday: 9am - 6pm<br>Saturday: 10am - 2pm</p>
-                        </div>
-                    </div>
                 </div>
                 <div class="contact-form">
                     <h3>Send Us a Message</h3>
@@ -1042,24 +893,19 @@
                             <input type="email" id="email" name="email" required>
                         </div>
                         <div class="form-group">
-                            <label for="company">Company</label>
-                            <input type="text" id="company" name="company">
-                        </div>
-                        <div class="form-group">
                             <label for="service">Service Interested In</label>
                             <select id="service" name="service">
                                 <option value="">Select a service</option>
                                 <option value="it-services">IT Services</option>
-                                <option value="consulting">Business Consulting</option>
-                                <option value="logistics">Logistics Solutions</option>
-                                <option value="multiple">Multiple Services</option>
+                                <option value="consulting">Consulting</option>
+                                <option value="logistics">Logistics</option>
                             </select>
                         </div>
                         <div class="form-group">
                             <label for="message">Message</label>
                             <textarea id="message" name="message" required></textarea>
                         </div>
-                        <button type="submit" class="btn">Send Message <i class="fas fa-paper-plane"></i></button>
+                        <button type="submit" class="btn">Send Message</button>
                     </form>
                 </div>
             </div>
@@ -1071,7 +917,7 @@
         <div class="container footer-container">
             <div class="footer-section">
                 <h3>Firstclass Solutions</h3>
-                <p>Providing exceptional IT services, consulting, and logistics solutions to businesses worldwide since 2010.</p>
+                <p>Providing exceptional IT services, consulting, and logistics solutions to businesses worldwide.</p>
                 <div class="social-links">
                     <a href="#"><i class="fab fa-facebook-f"></i></a>
                     <a href="#"><i class="fab fa-twitter"></i></a>
@@ -1093,8 +939,8 @@
                 <h3>Services</h3>
                 <ul>
                     <li><a href="#">IT Services</a></li>
-                    <li><a href="#">Business Consulting</a></li>
-                    <li><a href="#">Logistics Solutions</a></li>
+                    <li><a href="#">Consulting</a></li>
+                    <li><a href="#">Logistics</a></li>
                     <li><a href="#">Cloud Solutions</a></li>
                     <li><a href="#">Cybersecurity</a></li>
                 </ul>
@@ -1171,18 +1017,6 @@
             e.preventDefault();
             alert('Thank you for your message! We will get back to you soon.');
             contactForm.reset();
-        });
-        
-        // Header scroll effect
-        window.addEventListener('scroll', () => {
-            const header = document.querySelector('header');
-            if (window.scrollY > 100) {
-                header.style.background = 'rgba(255, 255, 255, 0.98)';
-                header.style.boxShadow = '0 4px 6px -1px rgba(0, 0, 0, 0.1)';
-            } else {
-                header.style.background = 'rgba(255, 255, 255, 0.95)';
-                header.style.boxShadow = '0 1px 3px rgba(0, 0, 0, 0.1)';
-            }
         });
         
         // Smooth scrolling for navigation links

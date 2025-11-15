@@ -6,10 +6,477 @@
   <title>First Class Solutions Nig Ltd. | Business & Financial Consulting</title>
   <meta name="description" content="Strategic business analytics, investment advisory, and management consulting led by Dr. Kazeem Ogbara, PhD, CMC. Est. 2006.">
   <meta name="keywords" content="business consulting, investment advisor, banking expert, Nigeria, Dr. Kazeem Ogbara, credit management, financial strategy">
-  <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="images/favicon.ico" type="image/x-icon">
   <!-- Font Awesome for icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" crossorigin="anonymous">
+  <style>
+    /* === ENHANCED STYLES - PRESERVING ORIGINAL BRAND IDENTITY === */
+    
+    /* Base Styles & Colors - Keeping Original Scheme */
+    :root {
+      --primary: #0056b3;
+      --primary-dark: #003d82;
+      --secondary: #2c3e50;
+      --accent: #f8f9fa;
+      --text: #333;
+      --light: #fff;
+      --gray: #666;
+      --light-gray: #f5f5f5;
+      --border: #e0e0e0;
+    }
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      color: var(--text);
+      background-color: var(--light);
+    }
+    
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    
+    /* Enhanced Header & Navigation */
+    header {
+      background: var(--light);
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+      padding: 15px 0;
+    }
+    
+    header .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .logo img {
+      transition: transform 0.3s ease;
+    }
+    
+    .logo img:hover {
+      transform: scale(1.05);
+    }
+    
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 30px;
+    }
+    
+    nav ul li a {
+      text-decoration: none;
+      color: var(--secondary);
+      font-weight: 500;
+      transition: all 0.3s ease;
+      position: relative;
+      padding: 5px 0;
+    }
+    
+    nav ul li a:hover,
+    nav ul li a.active {
+      color: var(--primary);
+    }
+    
+    nav ul li a::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background: var(--primary);
+      transition: width 0.3s ease;
+    }
+    
+    nav ul li a:hover::after,
+    nav ul li a.active::after {
+      width: 100%;
+    }
+    
+    .mobile-menu-btn {
+      display: none;
+      background: none;
+      border: none;
+      font-size: 1.5rem;
+      color: var(--secondary);
+      cursor: pointer;
+    }
+    
+    /* Enhanced Hero Section */
+    .hero {
+      background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80') no-repeat center center/cover;
+      color: var(--light);
+      padding: 180px 0 100px;
+      text-align: center;
+      margin-top: 70px;
+    }
+    
+    .hero-content {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+      font-weight: 700;
+      line-height: 1.2;
+    }
+    
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+      opacity: 0.9;
+    }
+    
+    .btn {
+      display: inline-block;
+      background: var(--primary);
+      color: var(--light);
+      padding: 14px 32px;
+      border: none;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+    
+    .btn:hover {
+      background: var(--primary-dark);
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+    
+    .btn-outline {
+      background: transparent;
+      border: 2px solid var(--primary);
+      color: var(--primary);
+    }
+    
+    .btn-outline:hover {
+      background: var(--primary);
+      color: var(--light);
+    }
+    
+    /* Enhanced CEO Section */
+    .ceo-section {
+      padding: 100px 0;
+      background: var(--accent);
+    }
+    
+    .ceo-flex {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+    
+    .ceo-image {
+      position: relative;
+    }
+    
+    .ceo-image img {
+      width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+    
+    .ceo-image:hover img {
+      transform: scale(1.02);
+    }
+    
+    .ceo-info h2 {
+      font-size: 2.2rem;
+      color: var(--secondary);
+      margin-bottom: 15px;
+    }
+    
+    .ceo-info h3 {
+      font-size: 1.3rem;
+      color: var(--primary);
+      margin-bottom: 20px;
+      font-weight: 600;
+    }
+    
+    .ceo-info p {
+      margin-bottom: 20px;
+      color: var(--gray);
+    }
+    
+    /* Enhanced Services Section */
+    .services-preview {
+      padding: 100px 0;
+      background: var(--light);
+    }
+    
+    .services-preview h2 {
+      text-align: center;
+      font-size: 2.5rem;
+      color: var(--secondary);
+      margin-bottom: 50px;
+    }
+    
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+    
+    .card {
+      background: var(--light);
+      padding: 40px 30px;
+      border-radius: 8px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+      transition: all 0.3s ease;
+      border: 1px solid var(--border);
+      text-align: center;
+    }
+    
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+    }
+    
+    .card h3 {
+      color: var(--primary);
+      margin-bottom: 15px;
+      font-size: 1.4rem;
+    }
+    
+    .card p {
+      color: var(--gray);
+      line-height: 1.6;
+    }
+    
+    /* Enhanced Awards Banner */
+    .awards-banner {
+      background: var(--primary);
+      color: var(--light);
+      padding: 60px 0;
+      text-align: center;
+    }
+    
+    .awards-banner h3 {
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+    }
+    
+    .awards-banner p {
+      font-size: 1.1rem;
+      max-width: 900px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+    
+    /* Enhanced Testimonial Section */
+    .testimonial {
+      padding: 100px 0;
+      background: var(--accent);
+      text-align: center;
+    }
+    
+    .testimonial blockquote {
+      font-size: 1.4rem;
+      font-style: italic;
+      color: var(--secondary);
+      max-width: 800px;
+      margin: 0 auto 30px;
+      line-height: 1.6;
+      position: relative;
+    }
+    
+    .testimonial blockquote::before {
+      content: """;
+      font-size: 4rem;
+      color: var(--primary);
+      opacity: 0.2;
+      position: absolute;
+      left: -40px;
+      top: -20px;
+      font-family: Georgia, serif;
+    }
+    
+    .testimonial cite {
+      color: var(--primary);
+      font-weight: 600;
+      font-style: normal;
+    }
+    
+    /* Enhanced Footer */
+    footer {
+      background: var(--secondary);
+      color: var(--light);
+      padding: 80px 0 30px;
+    }
+    
+    .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 40px;
+      margin-bottom: 40px;
+    }
+    
+    .footer-col h4 {
+      font-size: 1.3rem;
+      margin-bottom: 20px;
+      color: var(--light);
+    }
+    
+    .footer-col p {
+      margin-bottom: 15px;
+      color: #ddd;
+      line-height: 1.6;
+    }
+    
+    .footer-col ul {
+      list-style: none;
+    }
+    
+    .footer-col ul li {
+      margin-bottom: 10px;
+    }
+    
+    .footer-col ul li a {
+      color: #ddd;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    
+    .footer-col ul li a:hover {
+      color: var(--light);
+    }
+    
+    .social-links {
+      display: flex;
+      gap: 15px;
+      margin-top: 20px;
+    }
+    
+    .social-links a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 50%;
+      color: var(--light);
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+    
+    .social-links a:hover {
+      background: var(--primary);
+      transform: translateY(-3px);
+    }
+    
+    footer hr {
+      border: none;
+      height: 1px;
+      background: rgba(255, 255, 255, 0.1);
+      margin: 30px 0;
+    }
+    
+    .copyright {
+      text-align: center;
+      color: #aaa;
+      font-size: 0.9rem;
+    }
+    
+    /* Responsive Design */
+    @media (max-width: 992px) {
+      .ceo-flex {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+      
+      .ceo-image {
+        order: -1;
+      }
+      
+      .hero h1 {
+        font-size: 2.5rem;
+      }
+    }
+    
+    @media (max-width: 768px) {
+      .mobile-menu-btn {
+        display: block;
+      }
+      
+      nav {
+        position: fixed;
+        top: 70px;
+        left: -100%;
+        width: 80%;
+        height: calc(100vh - 70px);
+        background: var(--light);
+        transition: all 0.3s ease;
+        box-shadow: 5px 0 15px rgba(0, 0, 0, 0.1);
+        padding: 30px;
+      }
+      
+      nav.active {
+        left: 0;
+      }
+      
+      nav ul {
+        flex-direction: column;
+        gap: 20px;
+      }
+      
+      .hero {
+        padding: 150px 0 80px;
+        margin-top: 60px;
+      }
+      
+      .hero h1 {
+        font-size: 2rem;
+      }
+      
+      .hero p {
+        font-size: 1.1rem;
+      }
+      
+      .services-preview h2,
+      .ceo-info h2 {
+        font-size: 2rem;
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .container {
+        width: 95%;
+      }
+      
+      .hero h1 {
+        font-size: 1.8rem;
+      }
+      
+      .cards {
+        grid-template-columns: 1fr;
+      }
+      
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
 </head>
 <body>
 
@@ -22,6 +489,11 @@
           <img src="images/logo.png" alt="First Class Solutions Logo" width="180">
         </a>
       </div>
+      
+      <button class="mobile-menu-btn">
+        <i class="fas fa-bars"></i>
+      </button>
+      
       <nav>
         <ul>
           <li><a href="index.html" class="active">Home</a></li>
@@ -101,7 +573,7 @@
   <section class="testimonial">
     <div class="container">
       <blockquote>
-        "Dr. Ogbara’s strategic insight transformed our financial planning. A trusted advisor with global excellence."
+        "Dr. Ogbara's strategic insight transformed our financial planning. A trusted advisor with global excellence."
       </blockquote>
       <cite>— CEO, Lagos Financial Group</cite>
     </div>
@@ -143,6 +615,22 @@
     </div>
   </footer>
 
+  <script>
+    // Mobile Menu Toggle
+    const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+    const nav = document.querySelector('nav');
+    
+    mobileMenuBtn.addEventListener('click', () => {
+      nav.classList.toggle('active');
+    });
+    
+    // Close mobile menu when clicking on a link
+    document.querySelectorAll('nav a').forEach(link => {
+      link.addEventListener('click', () => {
+        nav.classList.remove('active');
+      });
+    });
+  </script>
+
 </body>
 </html>
-
